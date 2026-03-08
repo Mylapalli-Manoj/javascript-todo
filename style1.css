@@ -47,7 +47,7 @@ button{
     transition: background 0.3s;    
 }
 #addtask:hover {
-    background-color: #45a049;
+    background-color: #138496;
     transform: scale(1.03);
 }
 #taskslist {
