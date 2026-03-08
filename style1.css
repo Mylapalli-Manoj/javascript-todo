@@ -1,0 +1,109 @@
+body{
+    background-color: #f4f6f8;
+    margin: 0;
+}
+button{
+    margin-left: 5px;
+}
+.completed{
+    text-decoration: line-through;
+    color: gray;
+    position: relative;
+}
+.completed::before{
+    content: "✓ ";
+    color : green;
+    font-weight: bold;
+}
+#container {
+    width: 400px;                 
+    margin: 50px auto;            
+    padding: 20px;                
+    background-color: #f9f9f9;    
+    border-radius: 10px;          
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    font-family: Arial, sans-serif; 
+}#inp {
+    width: 60%;                     
+    padding: 10px;                  
+    font-size: 16px;                
+    border: 1px solid #ccc;         
+    border-radius: 5px;             
+    outline: none;                  
+}
+#inp:focus {
+    border-color: #4CAF50;          
+    box-shadow: 0 0 5px #4CAF50;    
+}
+#addtask {
+    padding: 10px 15px;             
+    font-size: 16px;                
+    border: none;                   
+    background-color:  #17a2b8;      
+    color: white;                   
+    border-radius: 5px;             
+    cursor: pointer;                
+    margin-left: 5px;               
+    transition: background 0.3s;    
+}
+#addtask:hover {
+    background-color: #45a049;
+    transform: scale(1.03);
+}
+#taskslist {
+    list-style: none;           
+    padding-left: 0;            
+    margin-top: 20px;           
+}
+#taskslist li {
+    padding: 10px;              
+    background-color: #fff;      
+    margin-bottom: 10px;         
+    border-radius: 5px;          
+    display: flex;               
+    justify-content: space-between; 
+    align-items: center;         
+    cursor: pointer;             
+    transition: background 0.2s; 
+   
+}
+
+#taskslist li:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+#taskslist li button {
+    background-color: #ff4d4d;   
+    border: none;                
+    color: white;                
+    padding: 5px 10px;           
+    border-radius: 5px;          
+    cursor: pointer;             
+    font-size: 14px;             
+    transition: background 0.3s ease; 
+}
+
+#taskslist li button:hover {
+    background-color: #e60000;    
+}
+
+
+.completed {
+    text-decoration: line-through; 
+    color: gray;                   
+    position: relative;            
+}
+
+.completed::before {
+    content: "✓ ";                 
+    color: green;                  
+    font-weight: bold;             
+}
+
+
+
+
+
+
